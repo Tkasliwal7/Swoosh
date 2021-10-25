@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SwooshPage2">
+    tools:context="Controller.SwooshPage2">
 
     <ImageView
         android:id="@+id/imageView"
@@ -44,27 +44,29 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <ToggleButton
-        android:id="@+id/toggleButton2"
+        android:id="@+id/coedLeagueBtn"
         android:layout_width="264dp"
         android:layout_height="60dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/swoosh_toggle"
+        android:onClick="coedLeagueClicked"
         android:text="Co-Ed"
         android:textColor="@color/white"
         android:textOff="Co-Ed"
         android:textOn="Co-Ed"
-        app:layout_constraintBottom_toBottomOf="@+id/toggleButton3"
+        app:layout_constraintBottom_toBottomOf="@+id/womensLeagueBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toggleButton3"
+        app:layout_constraintTop_toTopOf="@+id/womensLeagueBtn"
         app:layout_constraintVertical_bias="0.0" />
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/mensLeagueBtn"
         android:layout_width="264dp"
         android:layout_height="60dp"
         android:layout_marginTop="148dp"
         android:background="@drawable/swoosh_toggle"
+        android:onClick="mensLeagueClicked"
         android:text="Mens"
         android:textColor="@color/white"
         android:textOff="Mens"
@@ -75,23 +77,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ToggleButton
-        android:id="@+id/toggleButton3"
+        android:id="@+id/womensLeagueBtn"
         android:layout_width="264dp"
         android:layout_height="60dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/swoosh_toggle"
+        android:onClick="womensLeagueClicked"
         android:text="Womens"
         android:textColor="@color/white"
         android:textOff="Womens"
         android:textOn="Womens"
-        app:layout_constraintBottom_toBottomOf="@+id/toggleButton"
+        app:layout_constraintBottom_toBottomOf="@+id/mensLeagueBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toggleButton"
+        app:layout_constraintTop_toTopOf="@+id/mensLeagueBtn"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/leagueNextBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -100,6 +103,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
+        android:onClick="leagueNextClicked"
         android:text="next"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
